@@ -26,8 +26,7 @@ pub fn str_contains(source: &str, target: &str, any_case: bool, skip_spaces: boo
 
 impl Search for User {
     fn search_contains(&self, target: &str, any_case: bool, skip_spaces: bool) -> bool {
-        str_contains(&self.tag(), target, any_case, skip_spaces)
-            || str_contains(&self.face(), target, any_case, skip_spaces)
+        str_contains(&self.face(), target, any_case, skip_spaces)
             || self
                 .accent_colour
                 .map(Color::hex)
@@ -40,10 +39,6 @@ impl Search for PartialMember {
         self.user
             .as_ref()
             .is_some_and(|user| user.search_contains(target, any_case, skip_spaces))
-            || self
-                .nick
-                .as_ref()
-                .is_some_and(|nick| str_contains(nick, target, any_case, skip_spaces))
     }
 }
 

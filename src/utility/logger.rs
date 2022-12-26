@@ -91,8 +91,11 @@ impl Logger {
                 let mut file = File::options().append(true).open(self.__path())?;
 
                 file.write_all(log.to_string().as_bytes())?;
+                file.write_all(&[b'\n'])?;
+                file.flush()?;
             }
         }
+
         Ok(())
     }
 
