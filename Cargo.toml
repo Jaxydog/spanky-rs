@@ -1,0 +1,46 @@
+[package]
+name = "spanky"
+description = "Open source guild harrassment bot"
+keywords = ["discord", "bot", "monkey"]
+authors = ["Ethan Lynch"]
+
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Jaxydog/spanky-rs/"
+
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+anyhow = "1.0"
+colored = "2.0"
+dotenvy = "0.15"
+rmp-serde = "1.1"
+ron = "0.8.0"
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[dependencies.clap]
+version = "4.0"
+features = ["derive"]
+
+[dependencies.rand]
+version = "0.8"
+features = ["min_const_gen"]
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
+
+[dependencies.serenity]
+git = "https://github.com/serenity-rs/serenity"
+branch = "next"
+default-features = false
+features = ["builder", "cache", "chrono", "client", "gateway", "http", "model", "rustls_backend", "utils", "unstable_discord_api"]
+
+[dependencies.tokio]
+version = "1.22"
+features = ["full"]
