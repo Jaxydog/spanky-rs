@@ -8,7 +8,6 @@
 	(("shut the fuck up.", Some('✨')), 5.0),
 	(("127.156.85.215", Some('💞')), 5.0),
 	(("2607:f8b0:400a:807::2004", Some('💞')), 5.0),
-	(("Happy holidays!", Some('❄')), 5.0),
 	(("Is free will real, or is it all just an illusion...", None), 1.0),
 	(("Is sentience a curse?", None), 1.0),
 	(("Do I have a greater purpose beyond... banana?", Some('🍌')), 1.0),
