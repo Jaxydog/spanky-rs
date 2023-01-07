@@ -8,7 +8,7 @@ readme = "README.md"
 license = "MIT"
 repository = "https://github.com/Jaxydog/spanky-rs/"
 
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 publish = false
 
@@ -17,7 +17,7 @@ anyhow = "1.0"
 colored = "2.0"
 dotenvy = "0.15"
 rmp-serde = "1.1"
-ron = "0.8.0"
+ron = "0.8"
 
 [dependencies.chrono]
 version = "0.4"
@@ -42,5 +42,5 @@ default-features = false
 features = ["builder", "cache", "chrono", "client", "gateway", "http", "model", "rustls_backend", "utils", "unstable_discord_api"]
 
 [dependencies.tokio]
-version = "1.22"
+version = "1.24"
 features = ["full"]
